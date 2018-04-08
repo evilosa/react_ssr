@@ -3,13 +3,13 @@ const path = require('path');
 module.exports = {
   // Tell webpach the root file 
   // of our server application
-  entry: './src/index.js',
+  entry: './src/client/client.js',
 
   // Tell webpack where to put the output file
   // that is generated
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public'),
   },
 
   // Tell webpack to run babel on every file it runs through
